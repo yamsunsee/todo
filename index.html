@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <script src="05c15b75-aca5-4324-a0bc-3ee0c7e0433a.js"></script>
+    <script src="780c045c-5a7c-42b7-980d-dae4d4f85e6d.js" defer></script>
+    <title>Todolist</title>
+  </head>
+  <body>
+    <h1>
+      <ion-icon name="shield-checkmark"></ion-icon>
+      Todolist
+    </h1>
+    <div class="container">
+      <form id="form">
+        <input id="input" type="text" placeholder="Enter your task here..." />
+        <button>
+          <ion-icon name="add"></ion-icon>
+          Add
+        </button>
+      </form>
+      <section class="filter-container">
+        <ul id="filter">
+          <li value="all" class="filter_option selected">
+            <ion-icon name="apps"></ion-icon>
+            All
+          </li>
+          <li value="pending" class="filter_option">
+            <ion-icon name="radio-button-off"></ion-icon>
+            Pending
+          </li>
+          <li value="completed" class="filter_option">
+            <ion-icon name="checkbox"></ion-icon>
+            Completed
+          </li>
+        </ul>
+      </section>
+      <section class="tasks">
+        <ul id="list"></ul>
+      </section>
+    </div>
+  </body>
+</html>
